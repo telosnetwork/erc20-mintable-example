@@ -1,10 +1,12 @@
 # ERC20 Template for Telos EVM Testnet Network
 
-This template contains everything you need to deploy a basic Open Zeppelin ERC20 contract to the [Telos EVM](https://www.telos.net/evm) Testnet Network. Follow the steps below to deploy and interact with your own ERC20 token in minutes ! 
+This repository implements the ERC20 Template for Telos EVM Testnet Network
+
+It was made for the Native to EVM transaction how-to and adds a mint functionality. It does not aim to be production ready.
 
 ## REQUIREMENTS
 
-This template requires [NodeJS & NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) installed on your machine and a [wallet address on the Telos EVM Testnet Network](https://www.telos.net/developers/getting-started-on-testnet).
+This repository requires [NodeJS & NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) installed on your machine and a [wallet address on the Telos EVM Testnet Network](https://www.telos.net/developers/getting-started-on-testnet).
 
 Commands used below work on recent Linux or Windows versions but have not been verified for Mac
 
@@ -44,10 +46,3 @@ The sourcify server connection timed out but your contract is still getting veri
 
 **Brand new to development ? Need more help setting things up ? Got a cool idea you need help with ? [Visit our developer channel on Telegram](https://t.me/TelosEVMDevs) !**
 
-## KEEP BUILDING !
-- Make it ownable and use your own private key to deploy
-- Add reflection
-- Make it upgradeable
-- Write more tests 
-- Modify configuration and deploy to mainnet !
-- ...
