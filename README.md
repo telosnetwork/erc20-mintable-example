@@ -2,7 +2,7 @@
 
 This repository implements the [ERC20 Template for Telos EVM Testnet Network](https://github.com/telosnetwork/erc20-template)
 
-It was made for the [Native to EVM transaction How-To](https://github.com/telosnetwork/native-to-evm-transaction) and adds a mint functionality. 
+It was made for the [Native to EVM transaction How-To](https://github.com/telosnetwork/native-to-evm-transaction), it is ownable, adds a mint functionality and removes the initial supply sent on deployment. 
 
 It does not aim to be production ready.
 
@@ -13,8 +13,7 @@ This repository requires [NodeJS & NPM](https://docs.npmjs.com/downloading-and-i
 Commands used below work on recent Linux or Windows versions but have not been verified for Mac
 
 ## INSTALL
-- Click the "use this template" button in [this repository](https://github.com/telosnetwork/erc20-template) and copy the **URL** you are redirected to once the generation is finished.
-![Use this template](https://i.imgur.com/6TB0NaE.jpg)
+- Clone this repository
 - Change the following configuration values in the `.env` file of your newly created repository:
     - `ACCOUNT: MY_TESTNET_EVM_ADDRESS`  
     - `TOKEN_NAME: My Token`
