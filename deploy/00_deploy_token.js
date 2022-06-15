@@ -6,7 +6,7 @@ module.exports = async ({getNamedAccounts, deployments}) => {
 
   console.log("Deploying", process.env.TOKEN_NAME, "(" + process.env.TOKEN_SYMBOL  + ") ...");
 
-  const token = await deploy('Token', {
+  const token = await deploy('MintableToken', {
     from: deployer,
     args: [process.env.TOKEN_NAME, process.env.TOKEN_SYMBOL, process.env.ACCOUNT],
   });

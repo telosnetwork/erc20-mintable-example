@@ -5,7 +5,7 @@ pragma solidity ^0.8.4;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract Token is ERC20, Ownable {
+contract MintableToken is ERC20, Ownable {
   
   event Mint(address indexed to, uint256 amount);
   
@@ -16,8 +16,8 @@ contract Token is ERC20, Ownable {
   }
  
   function mint(address _to, uint256 _amount) external onlyOwner returns (bool) {
-    _mint(_to, _amount * 10 ** decimals());
-    Mint(_to, _amount);
+    _mint(_to, _amount);
+    emit Mint(_to, _amount);
     return true;
   }
  
