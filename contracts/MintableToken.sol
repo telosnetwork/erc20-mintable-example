@@ -8,7 +8,6 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract Token is ERC20, Ownable {
   
   event Mint(address indexed to, uint256 amount);
-  event MintFinished();
   
   bool public mintingFinished = false;
     
@@ -20,9 +19,8 @@ contract Token is ERC20, Ownable {
     return true;
   }
  
-  function finishMinting() external onlyOwner returns (bool) {
-    mintingFinished = true;
-    MintFinished();
+  function toggleMinting() external onlyOwner returns (bool) {
+    mintingFinished = !mintingFinished;
     return true;
   }
 }
