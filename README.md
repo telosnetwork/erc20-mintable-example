@@ -17,7 +17,6 @@ Commands used below work on recent Linux or Windows versions but have not been v
     - `ACCOUNT: MY_TESTNET_EVM_ADDRESS`  
     - `TOKEN_NAME: My Token`
     - `TOKEN_SYMBOL: MYTOK`
-    - `TOKEN_INITIAL_SUPPLY: 10000`
 - Install the repository on your machine with `git clone [PREVIOUSLY COPIED URL]` (GIT required) or download the code and install it manually
 - Enter the directory of the project on your machine and install its dependencies by running `npm install`
 
