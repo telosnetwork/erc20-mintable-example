@@ -1,4 +1,4 @@
-# ERC20 EVM Template example implementation
+# ERC20 EVM Template: Mint example implementation
 
 This repository implements the [ERC20 Template for Telos EVM Testnet Network](https://github.com/telosnetwork/erc20-template)
 
