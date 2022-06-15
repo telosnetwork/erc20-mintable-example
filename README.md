@@ -2,7 +2,7 @@
 
 This repository implements the [ERC20 Template for Telos EVM Testnet Network](https://github.com/telosnetwork/erc20-template)
 
-It was made for the Native to EVM transaction how-to and adds a mint functionality. It does not aim to be production ready.
+It was made for the [Native to EVM transaction How-To](https://github.com/telosnetwork/native-to-evm-transaction) and adds a mint functionality. It does not aim to be production ready.
 
 ## REQUIREMENTS
 
