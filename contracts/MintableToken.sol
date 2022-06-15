@@ -11,7 +11,9 @@ contract Token is ERC20, Ownable {
   
   bool public mintingFinished = false;
     
-  constructor(string memory _name, string memory _symbol, address _owner) ERC20(_name, _symbol) {}
+  constructor(string memory _name, string memory _symbol, address _owner) ERC20(_name, _symbol) {
+    _transferOwnership(_owner);
+  }
  
   function mint(address _to, uint256 _amount) external onlyOwner returns (bool) {
     _mint(_to, _amount * 10 ** decimals());
