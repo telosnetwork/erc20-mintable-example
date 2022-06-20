@@ -4,7 +4,7 @@ const { expect } = require("chai");
 const { ethers } = require("hardhat");
 const ONE_TLOS = ethers.utils.parseEther("1.0");
 
-describe("Token contract", function () {
+describe("MintableToken contract", function () {
     let Token, tokenInstance;
     beforeEach(async () => {
         const [owner] = await ethers.getSigners();
